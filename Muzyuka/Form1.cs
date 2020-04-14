@@ -23,6 +23,7 @@ namespace Muzyuka
         public Form1()
         {
             InitializeComponent();
+            trackBarRefreshRate_Scroll(trackBarRefreshRate, null);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -77,7 +78,7 @@ namespace Muzyuka
             }
 
             Graphics g = e.Graphics;
-            Pen pen = new Pen(Color.OrangeRed, 3);
+            Pen pen = new Pen(Color.White, 3);
 
             g.DrawLines(pen, points);
             //g.DrawBeziers(pen, points);

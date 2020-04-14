@@ -103,7 +103,7 @@
             this.trackBarRefreshRate.Name = "trackBarRefreshRate";
             this.trackBarRefreshRate.Size = new System.Drawing.Size(154, 27);
             this.trackBarRefreshRate.TabIndex = 2;
-            this.trackBarRefreshRate.Value = 20;
+            this.trackBarRefreshRate.Value = 50;
             this.trackBarRefreshRate.Scroll += new System.EventHandler(this.trackBarRefreshRate_Scroll);
             // 
             // labelRefreshRate

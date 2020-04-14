@@ -67,9 +67,6 @@ namespace Muzyuka
                 {
                     this._fftPos = 0;
 
-                    // NAudio FFT implementation.
-                    //FastFourierTransform.FFT(true, this._m, this._fftBuffer);
-
                     // Copy to buffer.
                     lock (this._lock)
                     {
@@ -110,12 +107,6 @@ namespace Muzyuka
                     return false;
                 }
             }
-        }
-
-        public int GetFFTFrequencyIndex(int frequency)
-        {
-            int index = (int)(frequency / (this.Format.SampleRate / this._fftLength / this.Format.Channels));
-            return index;
         }
     }
 }

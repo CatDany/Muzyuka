@@ -24,7 +24,7 @@ namespace Muzyuka
             this._capture = new WasapiLoopbackCapture();
             this._capture.DataAvailable += this.DataAvailable;
 
-            this._fftLength = 64; // must be a multiple of two
+            this._fftLength = 128; // must be a multiple of two
             this._m = (int)Math.Log(this._fftLength, 2.0);
             this._fftBuffer = new Complex[this._fftLength];
             this._lastFftBuffer = new float[this._fftLength];

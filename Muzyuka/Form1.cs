@@ -80,8 +80,7 @@ namespace Muzyuka
             Graphics g = e.Graphics;
             Pen pen = new Pen(Color.White, 3);
 
-            g.DrawLines(pen, points);
-            //g.DrawBeziers(pen, points);
+            g.DrawBeziers(pen, points);
         }
 
         private void timerRender_Tick(object sender, EventArgs e)
